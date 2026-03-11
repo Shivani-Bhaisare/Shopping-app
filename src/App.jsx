@@ -12,11 +12,12 @@ import NewsBlog from "./Components/NewsBlog";
 import Faq from "./Components/Faq";
 import Newsletter from "./Components/Newsletter";
 import Footer from "./Components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Shopping-app/">
       {/* Common Layout (Navbar + Footer sab pages me hoga) */}
       <Navbar />
 
